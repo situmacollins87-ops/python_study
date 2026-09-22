@@ -47,18 +47,48 @@ print(days_of_the_week)
 
 #Assignment 2
 trainees=["John", [2,["James","Mary"]]]
-print(trainees[1])
-trainees.pop(1)
+print(trainees[1][0])
+print(trainees[1][1][1])
+#output James
+print(trainees[1][1][0])
 print(trainees)
-trainees.append('56')
+#to add Mike first display the list
+print(trainees[1][1])
 print(trainees)
-trainees.insert(1,'Mike')
+trainees[1][1].insert(1,'Mike')
 print(trainees)
-trainees[1]='8'
+#change 2 to 8 first display two 
+print(trainees[1][0])
+trainees[1][0]=8
 print(trainees)
 trainees.remove("John")
 print(trainees)
 print(len(trainees))
+
+#Class Assignment
+employees = [ "TechElar", [4, ["Kevin", "Brian", "Alice"]]]
+print(employees[1][0])
+#display Brian
+print(employees[1][1][1])
+#display Alice
+print(employees[1][1][2])
+#add 7 in the outer list
+employees.append('7')
+print(employees)
+#Add David between Brian and Alice
+employees[1][1].insert(2,'David')
+print(employees)
+#change number 4 to 10
+employees[1][0]=10
+print(employees)
+#change kevin to James
+employees[1]='James'
+print(employees)
+#Remove TechElar
+employees.remove('TechElar')
+print(employees)
+
+
 
 
 
